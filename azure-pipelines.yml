@@ -23,7 +23,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(system.defaultWorkingDirectory)//target'
+    SourceFolder: '$(system.defaultWorkingDirectory)'
     Contents: '*.jar'
     TargetFolder: '$(build.artifactstagingdirectory)'
 - task: PublishBuildArtifacts@1
